@@ -10,6 +10,6 @@ class Timer:
     def stop(self):
         self.stop_time = time.time()
         total_time = self.stop_time - self.start_time
-        self.seconds = total_time
+        self.seconds = round(total_time, 2)
     def get(self):
         return self.seconds
